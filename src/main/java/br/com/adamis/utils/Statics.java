@@ -8,7 +8,7 @@ import org.apache.maven.model.io.xpp3.MavenXpp3Reader;
 
 public class Statics {
 
-	public static String NAME_SYS = "ESQUADRO ENTITY GENERATE";
+	public static String NAME_SYS = "ESQUADRO ENTITY MAPPER";
 	public static String VERSION = version();
 	public static Integer UPDATE_UP_LEVEL = 900;
 	public static String MODULE_NAME = "modules";
@@ -21,8 +21,8 @@ public class Statics {
 
 			String fileT = "";
 
-			if (new File("META-INF/maven/DBSBMapper/DBSBMapper/pom.xml").exists()) {
-				fileT = "META-INF/maven/DBSBMapper/DBSBMapper/pom.xml";
+			if (new File("META-INF/maven/br.com.adamis/EEMapper/pom.xml").exists()) {
+				fileT = "META-INF/maven/br.com.adamis/EEMapper/pom.xml";
 			} else if (new File("pom.xml").exists()) {
 				fileT = "pom.xml";
 			}
